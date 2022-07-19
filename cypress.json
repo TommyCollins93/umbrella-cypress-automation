@@ -1,8 +1,0 @@
-{
-    "pageLoadTimeout": 50000,
-    "viewportWidth": 1440,
-    "viewportHeight": 800,
-    "baseUrl": "https://stage-iso14001.myaudit.net",
-    "chromeWebSecurity": false
-
-}
