@@ -59,7 +59,7 @@ describe("NOT A TEST - revert edit changes", function(){
         cy.get("#price-factor-low_risk-iso_9001").find(".text").contains("Yes").click();
         //
         cy.get("basic-order-edit").find('#change-button').click();
-        cy.wait(5000);
+        cy.wait(4000);
         cy.get("price-change-approve").find("#approve-changes-button").click();
         cy.wait(5000);
         cy.get(".order-card").find("#toggle-order-details").should("have.text", " Show ");
@@ -102,7 +102,7 @@ describe("NOT A TEST - revert edit changes", function(){
         cy.get("#text-question-0ISO_9001-iso_9001").clear().type("Alloy, gold");
         //
         cy.get("additional-questions-edit").find("#change-button").click();
-        cy.wait(5000);
+        cy.wait(4000);
         cy.get(".additional-questions-card").find("#toggle-order-details").should("have.text", " Show ");
         cy.get(".additional-questions-card").find("#order-details").should("not.exist");
         cy.get(".additional-questions-card").find(".change-button.collapsed").should("exist");

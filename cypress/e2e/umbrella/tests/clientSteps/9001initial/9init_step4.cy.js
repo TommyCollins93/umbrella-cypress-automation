@@ -336,7 +336,7 @@ describe("9001 initial - 4th step testcases", function(){
                 cy.get("#shifts-number-more_iso_9001").click().find(".ng-option-label").contains("4").click();
             //
             cy.get("basic-order-edit").find("#change-button").click();
-            cy.wait(5000);
+            cy.wait(8000);
             cy.get("price-change-approve").should("not.exist");
     
             //signed by - field contents updated
@@ -376,7 +376,7 @@ describe("9001 initial - 4th step testcases", function(){
             cy.get("price-change-approve").find(".decision-buttons").should("exist");
             cy.get(".submit-button").should("have.attr", "disabled");
             cy.get(".decision-buttons").eq(1).find("#approve-changes-button").click(); //save changes
-            cy.wait(5000);
+            cy.wait(8000);
             cy.get(".order-card").find("#toggle-order-details").should("have.text", " Show ");
             cy.get(".order-card").find("#order-details").should("not.exist");
             cy.get(".order-card").find(".change-button.collapsed").should("exist");
@@ -420,7 +420,7 @@ describe("9001 initial - 4th step testcases", function(){
             cy.wait(5000);
             cy.get("additional-questions-edit").find("price-change-approve").should("exist");
             cy.get("price-change-approve").find("#approve-changes-button").click();
-            cy.wait(5000);
+            cy.wait(8000);
             cy.get(".additional-questions-card").find("#toggle-order-details").should("have.text", " Show ");
             cy.get(".additional-questions-card").find("#order-details").should("not.exist");
             cy.get(".additional-questions-card").find(".change-button.collapsed").should("exist");
@@ -431,7 +431,7 @@ describe("9001 initial - 4th step testcases", function(){
             cy.get("additional-questions-edit").find("#change-button").click();
             cy.wait(5000);
             cy.get("price-change-approve").find("#approve-changes-button").click();
-            cy.wait(5000);
+            cy.wait(8000);
             cy.get(".additional-questions-card").find("#toggle-order-details").should("have.text", " Show ");
             cy.get(".additional-questions-card").find("#order-details").should("not.exist");
             cy.get(".additional-questions-card").find(".change-button.collapsed").should("exist");

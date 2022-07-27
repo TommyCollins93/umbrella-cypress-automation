@@ -113,11 +113,11 @@ describe("9001 transfer send to dekra", function(){
         //expected result - order page
         cy.url().should('include', '/under-review');
 
-        cy.fixture('audio/cococo.mp3', 'base64').then((mp3) => {
-            const uri = 'data:audio/mp3;base64,' + mp3
-            const audio = new Audio(uri)
+        // cy.fixture('audio/cococo.mp3', 'base64').then((mp3) => {
+        //     const uri = 'data:audio/mp3;base64,' + mp3
+        //     const audio = new Audio(uri)
         
-            audio.play()
-          })
+        //     audio.play()
+        //   })
     })
 })

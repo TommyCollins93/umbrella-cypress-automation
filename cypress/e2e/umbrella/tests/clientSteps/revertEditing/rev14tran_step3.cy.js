@@ -39,13 +39,13 @@ describe("NOT A TEST - revert edit changes", function(){
         cy.get('#company-scopes').click();
         cy.get(".ng-dropdown-panel-items").find("#item-2-iso_14001").click();
         cy.get("#part-time-employees-included-iso_14001").find(".text").contains("Yes").click({force: true});
-        cy.get("#employees-count-description-iso_14001").type("1000");
+        cy.get("#employees-count-description-iso_14001").clear().type("1000");
         cy.get("#shifts_iso_14001").find(".text").contains("More").click();
-        cy.get("#shifts-number-more_iso_14001").click().find(".ng-option-label").contains("8").click();
+        //cy.get("#shifts-number-more_iso_14001").click().find(".ng-option-label").contains("8").click();
         //
         cy.get("#price-factor-performing_design-iso_14001").find(".text").contains("No").click();
         cy.get("#price-factor-translator_required-iso_14001").find(".text").contains("Yes").click();
-        cy.get("#attached-question-translator_required-iso_14001-specify_language").type("Deutsch");
+        cy.get("#attached-question-translator_required-iso_14001-specify_language").clear().type("Deutsch");
         cy.get("#price-factor-high_degree_of_regulation-iso_14001").find(".text").contains("No").click();
         cy.get("#price-factor-complex_process-iso_14001").find(".text").contains("Yes").click();
         cy.get("#price-factor-outsourcing_processes-iso_14001").find(".text").contains("No").click();
