@@ -376,7 +376,7 @@ describe("14001 transfer - 4th step testcases", function(){
                 cy.get("#price-factor-low_risk-iso_14001").find(".text").contains("No").click();
             //
             cy.get("basic-order-edit").find("#change-button").click();
-            cy.wait(5000);
+            cy.wait(4000);
             cy.get("price-change-approve").find("product-pricing").should("exist");
             cy.get("price-change-approve").find("pricing-adjustments-details").should("exist");
             cy.get("price-change-approve").find("pricing-summary").should("exist");

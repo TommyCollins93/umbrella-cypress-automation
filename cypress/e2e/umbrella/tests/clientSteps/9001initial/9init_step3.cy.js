@@ -219,7 +219,7 @@ describe("9001 initial - 3rd step testcases", function(){
             cy.get("#shifts-number-more_iso_9001").click().find(".ng-option-label").contains("4").click();
         //
         cy.get(".decision-buttons").find("#change-button").click();
-        cy.wait(3000);
+        cy.wait(4000);
         cy.get("price-change-approve").should("not.exist");
 
         //editing - editing and saving changes - prices change
@@ -245,7 +245,7 @@ describe("9001 initial - 3rd step testcases", function(){
             cy.get("#price-factor-low_risk-iso_9001").find(".text").contains("No").click();
         //
         cy.get(".decision-buttons").find("#change-button").click();
-        cy.wait(5000);
+        cy.wait(4000);
         cy.get("price-change-approve").find("product-pricing").should("exist");
         cy.get("price-change-approve").find("pricing-adjustments-details").should("exist");
         cy.get("price-change-approve").find("pricing-summary").should("exist");

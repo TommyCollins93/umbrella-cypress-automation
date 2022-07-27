@@ -181,7 +181,7 @@ describe("9001 initial - 3rd step - calculations", function(){
         /*
         Scope risk: High
         Final risk: High
-        No. of employees: 2000
+        No. of employees: 2025
         Employees within scope: 500
         Reduction: -40%
         Price factors answers: 1 - Yes; 2 - Yes; 3 - Yes; 4 - Yes; 5 - No; 6 - No; 7 - No; 8 - No
